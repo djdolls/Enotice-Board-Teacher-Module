@@ -1,14 +1,33 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
+angular.module('EnoticeBoardWebApp', [
   'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
+  'EnoticeBoardWebApp.home',
+  'EnoticeBoardWebApp.welcome',
+  'EnoticeBoardWebApp.pending',
+  'EnoticeBoardWebApp.profile',
+  'EnoticeBoardWebApp.viewuser',
+  'EnoticeBoardWebApp.addpost',
+  'EnoticeBoardWebApp.report',
+   'EnoticeBoardWebApp.editprofile',
+  'EnoticeBoardWebApp.temp',
+  'EnoticeBoardWebApp.loader',
+  'EnoticeBoardWebApp.dashboard',
+  'EnoticeBoardWebApp.register',
+  'EnoticeBoardWebApp.blank',
+  'EnoticeBoardWebApp.newpost',
+  'EnoticeBoardWebApp.uploadpic',
+  'EnoticeBoardWebApp.viewdocument',
+   'EnoticeBoardWebApp.otherdepartment',
+    'EnoticeBoardWebApp.principal',
+     'EnoticeBoardWebApp.forgetpassword',
+  'EnoticeBoardWebApp.newdocument'
+
+
+
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
 
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.otherwise({redirectTo: '/home'});
 }]);
